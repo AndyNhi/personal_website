@@ -1,0 +1,27 @@
+button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+  border-radius: .5em;
+  font-family: 'Genius-100-Thin';
+}
+
+button.music {
+  border: .2em solid #ff4444;
+}
+
+button.covix {
+  border: .2em solid #fcaf4b;
+  transition: .2s ease;
+}
+
+button.covix:hover {
+  color: white;
+  background: black;
+}
+
+button.resume {
+  border: .2em solid #ffea73;
+}

@@ -7,9 +7,12 @@ gutters: 0,
 @import 'bower_components/susy/sass/susy';
 @import 'colors';
 @import 'profile_component';
+@import 'buttons';
+@import 'resume';
 
 html, body {
   height: 100%;
+  font-family: 'Quattrocento Sans';
 }
 
 body {
@@ -103,7 +106,7 @@ main.home-page {
 
 main.music-page {
   @include span(10 of 12);
-  margin-left: span(2 of 10);
+  margin-left: span(2 of 12);
   height: 100%;
   background-color: $music-color;
 }
@@ -117,7 +120,7 @@ main.covix-page {
 
 main.resume-page {
   @include span(10 of 12);
-  margin-left: span(2 of 10);
+  margin-left: span(2 of 12);
   height: 100%;
   background-color: $resume-color;
 }
@@ -202,12 +205,15 @@ main.resume-page {
 iframe {
   max-width: 100%;
 }
+
+.ember-view.profile {
+  height: 0;
+}
 .covix-video {
   margin-top: 20px;
   @include span(8.8 of 12);
   margin-left: span(1.5 of 12);
 }
-
 
 .covix_font {
   text-align:justify;

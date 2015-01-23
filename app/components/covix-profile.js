@@ -1,8 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+
+  classNames: [ 'profile' ],
+
   didInsertElement: function() {
-    
+
     $('[data-profile="modal-wynn"]').on('click', function(event) {
       event.preventDefault();
       $('#modal-wynn').addClass('md-show');
@@ -20,7 +23,6 @@ export default Ember.Component.extend({
     $('#modal-billy').on('click', function() {
       $(this).removeClass('md-show');
     });
-
 
     $('[data-profile="modal-andy"]').on('click', function(event) {
       event.preventDefault();

@@ -1,0 +1,29 @@
+section.experience-education {
+  @include span(4.5 of 12);
+  margin-left: span(1 of 12);
+  color: black;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.38);
+  padding: 20px;
+}
+
+section.employment {
+  @include span(4 of 12);
+  margin-left: span(.5 of 12);
+  color: black;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.38);
+  padding: 20px;
+}
+
+.bold {
+  font-weight: bolder
+}
+
+.resume-page p {
+  padding-left: 20px;
+}
+
+.resume-page ul li {
+  padding-left: 20px;
+}

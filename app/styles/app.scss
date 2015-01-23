@@ -96,7 +96,7 @@ aside img.icon-size {
 
 main.home-page {
   @include span(10 of 12);
-  margin-left: span(2 of 10);
+  margin-left: span(2 of 12);
   height: 100%;
   background-color: $home-color;
 }
@@ -110,7 +110,7 @@ main.music-page {
 
 main.covix-page {
   @include span(10 of 12);
-  margin-left: span(2 of 10);
+  margin-left: span(2 of 12);
   height: 100%;
   background-color: $covix-color;
 }

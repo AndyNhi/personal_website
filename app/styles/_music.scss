@@ -1,0 +1,18 @@
+section.music-player {
+  @include span(6 of 12);
+  margin-left: span(2.5 of 12);
+  background: rgba(0, 0, 0, 0.63);
+  margin-top: 60px;
+  height: 700px;
+  padding: 40px;
+}
+
+div.click-song{
+  height: 60px;
+  width: 60px;
+}
+
+.play-icon {
+  background-image: url(/icons/play_icon.png);
+  background-size: contain;
+}

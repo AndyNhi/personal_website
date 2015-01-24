@@ -7,6 +7,16 @@ section.story {
   border-radius: 6px;
 }
 
+section.story > h2, p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section.resources > h2, h5, p, ul, li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 section.resources {
   @include span(4.5 of 12);
   margin-left: span(1 of 12);

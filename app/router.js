@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('home');
+  this.resource('home', { path: '/' });
   this.route('music');
   this.route('covix');
   this.route('resume');

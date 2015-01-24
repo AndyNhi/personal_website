@@ -10,6 +10,7 @@ gutters: 0,
 @import 'buttons';
 @import 'resume';
 @import 'music';
+@import 'home';
 
 html, body {
   height: 100%;
@@ -102,7 +103,10 @@ main.home-page {
   @include span(10 of 12);
   margin-left: span(2 of 12);
   height: 100%;
-  background-color: $home-color;
+  background-image: url(/images/city.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 main.music-page {

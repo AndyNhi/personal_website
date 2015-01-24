@@ -1,0 +1,10 @@
+.home-section {
+  font-family: 'Genius-100-Thin';
+  @include span(6 of 12);
+  margin-left: span(3.5 of 12);
+  margin-top: 30%;
+}
+
+.home-section > h1 > span {
+  color: $home-color;
+}

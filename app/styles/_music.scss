@@ -14,5 +14,14 @@ div.click-song{
 
 .play-icon {
   background-image: url(/icons/play_icon.png);
-  background-size: contain;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.pause-icon {
+  background-image: url(/icons/pause_icon.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
 }

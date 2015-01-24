@@ -12,6 +12,7 @@ gutters: 0,
 @import 'music';
 @import 'home';
 @import 'contact';
+@import 'code';
 
 html, body {
   height: 100%;
@@ -97,6 +98,15 @@ aside nav li:nth-child(4) a:hover {
   color: $resume-color;
 }
 
+aside nav li:nth-child(5) {
+  transition: .2s ease;
+}
+
+aside nav li:nth-child(5) a:hover {
+  color: $code-color;
+}
+
+
 aside img.icon-size {
   height: 12%;
   width: 12%;
@@ -130,6 +140,13 @@ main.resume-page {
   margin-left: span(2 of 12);
   height: 100%;
   background-color: $resume-color;
+}
+
+main.code-page {
+  @include span(10 of 12);
+  margin-left: span(2 of 12);
+  height: 100%;
+  background-color: $code-color;
 }
 
 main.contact-page {

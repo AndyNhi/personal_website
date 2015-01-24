@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('covix');
   this.route('resume');
   this.route('contact');
+  this.route('code');
 });
 
 

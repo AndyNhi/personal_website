@@ -1,0 +1,17 @@
+section.story {
+  @include span(4.5 of 12);
+  margin-left: span(1 of 12);
+  margin-top: 50px;
+  height: 800px;
+  background: rgba(0, 0, 0, 0.50);
+  border-radius: 6px;
+}
+
+section.resources {
+  @include span(4.5 of 12);
+  margin-left: span(1 of 12);
+  margin-top: 50px;
+  height: 800px;
+  background: rgba(0, 0, 0, 0.50);
+  border-radius: 6px;
+}

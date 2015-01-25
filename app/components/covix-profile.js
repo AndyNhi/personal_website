@@ -32,5 +32,14 @@ export default Ember.Component.extend({
     $('#modal-andy').on('click', function() {
       $(this).removeClass('md-show');
     });
+
+    $('[data-profile="modal-ellis"]').on('click', function(event) {
+      event.preventDefault();
+      $('#modal-ellis').addClass('md-show');
+    });
+
+    $('#modal-ellis').on('click', function() {
+      $(this).removeClass('md-show');
+    });
   }
 });

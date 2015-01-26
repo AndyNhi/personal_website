@@ -140,6 +140,7 @@ main.resume-page {
   margin-left: span(2 of 12);
   height: 100%;
   background-color: $resume-color;
+  overflow:  scroll;
 }
 
 main.code-page {
@@ -147,6 +148,7 @@ main.code-page {
   margin-left: span(2 of 12);
   height: 100%;
   background-color: $code-color;
+  overflow:  scroll;
 }
 
 main.contact-page {

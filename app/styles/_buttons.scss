@@ -31,4 +31,12 @@ button.code {
   border: none;
   color: white;
   margin-top: 20px;
+  transition: .2s ease;
+}
+
+button.code:hover {
+  background: rgba(0, 0, 0, 0.33);
+  border: none;
+  color: #1485ff;
+  margin-top: 20px;
 }

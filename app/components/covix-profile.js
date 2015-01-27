@@ -6,40 +6,40 @@ export default Ember.Component.extend({
 
   didInsertElement: function() {
 
-    $('[data-profile="modal-wynn"]').on('click', function(event) {
+    Ember.$('[data-profile="modal-wynn"]').on('click', function(event) {
       event.preventDefault();
-      $('#modal-wynn').addClass('md-show');
+      Ember.$('#modal-wynn').addClass('md-show');
     });
 
-    $('#modal-wynn').on('click', function() {
-      $(this).removeClass('md-show');
+    Ember.$('#modal-wynn').on('click', function() {
+      Ember.$(this).removeClass('md-show');
     });
 
-    $('[data-profile="modal-billy"]').on('click', function(event) {
+    Ember.$('[data-profile="modal-billy"]').on('click', function(event) {
       event.preventDefault();
-      $('#modal-billy').addClass('md-show');
+      Ember.$('#modal-billy').addClass('md-show');
     });
 
-    $('#modal-billy').on('click', function() {
-      $(this).removeClass('md-show');
+    Ember.$('#modal-billy').on('click', function() {
+      Ember.$(this).removeClass('md-show');
     });
 
-    $('[data-profile="modal-andy"]').on('click', function(event) {
+    Ember.$('[data-profile="modal-andy"]').on('click', function(event) {
       event.preventDefault();
-      $('#modal-andy').addClass('md-show');
+      Ember.$('#modal-andy').addClass('md-show');
     });
 
-    $('#modal-andy').on('click', function() {
-      $(this).removeClass('md-show');
+    Ember.$('#modal-andy').on('click', function() {
+      Ember.$(this).removeClass('md-show');
     });
 
-    $('[data-profile="modal-ellis"]').on('click', function(event) {
+    Ember.$('[data-profile="modal-ellis"]').on('click', function(event) {
       event.preventDefault();
-      $('#modal-ellis').addClass('md-show');
+      Ember.$('#modal-ellis').addClass('md-show');
     });
 
-    $('#modal-ellis').on('click', function() {
-      $(this).removeClass('md-show');
+    Ember.$('#modal-ellis').on('click', function() {
+      Ember.$(this).removeClass('md-show');
     });
   }
 });

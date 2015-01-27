@@ -8,25 +8,21 @@ export default Ember.Component.extend({
       client_id: ENV.soundcloudApiKey
     });
 
-    $('.music-player').on('click', 'div', function () {
-      $(this).removeClass('play-icon').addClass('pause-icon');
-      $('.music-player div').not($(this)).removeClass('pause-icon').addClass('play-icon');
-      var track = $(this).data("track")
-      SC.stream("/tracks/" + track, function(sound) {
-        soundManager.stopAll();
-        sound.play();
-      });
-    })
+    $('.music-player').on('click', 'div', function() {
 
-    $('.music-player').on('click', '.pause-icon', function () {
-      $(this).removeClass('pause-icon').addClass('play-icon');
-      var track = $(this).data('track');
-      console.log(track);
-      SC.stream("/tracks/" + track, function(sound) {
-        sound.pause();
-      });
+      if($(this).hasClass('play-icon')) {
+        $('.music-player div').not($(this)).removeClass('pause-icon').addClass('play-icon');
+        $(this).removeClass('play-icon').addClass('pause-icon');
+        var track = $(this).data("track");
+        SC.stream("/tracks/" + track, function(sound) {
+          soundManager.stopAll();
+          sound.play();
+        })
+      } else {
+        $(this).removeClass('pause-icon').addClass('play-icon');
+        soundManager.pauseAll();
+      }
     })
-
   }
 
 });

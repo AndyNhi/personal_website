@@ -5,7 +5,11 @@ section.music-player {
   margin-top: 60px;
   height: 700px;
   padding: 40px;
+  overflow:  scroll;
+  overflow-x: hidden;
 }
+
+
 
 .music-player div {
   margin-top: 30px;

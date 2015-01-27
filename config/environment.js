@@ -1,11 +1,14 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
+
+
   var ENV = {
     modulePrefix: 'personal-website',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    soundcloudApiKey: process.env.SOUNDCLOUD_APIKEY,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

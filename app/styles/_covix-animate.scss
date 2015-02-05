@@ -4,6 +4,10 @@
   -moz-box-sizing:content-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 #covix-logo {
   font-family: "Arial";
   position: relative;

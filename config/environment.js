@@ -10,6 +10,9 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
     soundcloudApiKey: process.env.SOUNDCLOUD_APIKEY,
+    sendgridUser: process.env.SENDGRID_USERNAME,
+    sendgridPw: process.env.SENDGRID_PASSWORD,
+    sendgridEmail: process.env.TO,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

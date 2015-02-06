@@ -1,42 +1,14 @@
-section.music-player {
-  @include span(6 of 12);
-  margin-left: span(2.5 of 12);
-  background: rgba(0, 0, 0, 0.63);
-  margin-top: 60px;
-  height: 700px;
-  padding: 40px;
+.music-widget {
+  @include span(8 of 12);
+  margin-left: span(2 of 12);
+  padding-top: 10%;
+  background: black;
+  height: 100%;
 }
 
-.music-player div {
-  margin-top: 30px;
-}
-
-.play-icon {
-  background-image: url(/icons/play_icon.png);
-  background-size: cover;
-  width: 30px;
-  height: 30px;
-}
-
-.pause-icon {
-  background-image: url(/icons/pause_icon.png);
-  background-size: cover;
-  width: 30px;
-  height: 30px;
-}
-
-
-.sm2-bar-ui {
- font-size: 16px;
-}
-
-.sm2-bar-ui .sm2-main-controls,
-
-.sm2-bar-ui .sm2-playlist-drawer {
- background-color: #cf6800; /* non-RGBA fallback */
- background-color: rgba(207, 104, 0, 0.7);
-}
-
-.sm2-bar-ui .sm2-inline-texture {
- background: transparent;
+.music-widget h1 {
+  font-family: "Plexifont";
+  font-size: 7rem;
+  margin: 0;
+  text-align: center;
 }

@@ -1,8 +1,9 @@
 .music-widget {
   @include span(8 of 12);
   margin-left: span(2 of 12);
-  background: black;
   height: 100%;
+  opacity: 0;
+  -webkit-animation: media-player 3s .1s forwards;
 }
 
 .music-widget h1 {
@@ -10,4 +11,17 @@
   font-size: 7rem;
   margin: 0;
   text-align: center;
+}
+
+
+@-webkit-keyframes media-player {
+  0% {
+    background: black;
+    margin-left: 1000px;
+    opacity: 0
+  }
+  100% {
+    background: black;
+    opacity: 1
+  }
 }

@@ -1,7 +1,6 @@
 #covix-logo * {
   position: absolute;
-  box-sizing:content-box;
-  -moz-box-sizing:content-box;
+  box-sizing: content-box;
 }
 
 ::-webkit-scrollbar {
@@ -13,7 +12,7 @@
   position: relative;
   width: 200px;
   height: 200px;
-  margin: 200px auto;
+  margin: 300px auto;
 }
 
 .x,.c,.k,.w {
@@ -40,18 +39,22 @@
 #covix-logo div.w {
 
   -webkit-animation: letters-w 6s 1s forwards;
+  -webkit-transform: scale(1);
 }
 
 #covix-logo div.x {
   -webkit-animation: letters-x 6s 1s forwards;
+  -webkit-transform: scale(1);
 }
 
 #covix-logo div.c {
   -webkit-animation: letters-c 6s 1s forwards;
+  -webkit-transform: scale(1);
 }
 
 #covix-logo div.k {
   -webkit-animation: letters-k 6s 1s forwards;
+  -webkit-transform: scale(1);
 }
 
 
@@ -62,7 +65,7 @@
     width: 1px;
     height: 400px;
     box-shadow: 1px 0px 0px 0px white;
-    transform:rotate(360deg);
+    transform: rotate(360deg);
   }
   100% {
     left: 0px;

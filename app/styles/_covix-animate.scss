@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 #covix-logo {
@@ -17,8 +17,9 @@
 }
 
 .x,.c,.k,.w {
-  opacity: 0;
+  opacity: 1;
 }
+
 
 #covix-logo div.line-left {
   -webkit-animation: line-left-slide 3s 1s forwards;
@@ -37,6 +38,7 @@
 }
 
 #covix-logo div.w {
+
   -webkit-animation: letters-w 6s 1s forwards;
 }
 
@@ -50,7 +52,6 @@
 
 #covix-logo div.k {
   -webkit-animation: letters-k 6s 1s forwards;
-
 }
 
 
@@ -128,7 +129,7 @@
 
 @-webkit-keyframes letters-w {
   0% {
-    font-size: 15rem;
+    font-size: 12rem;
     left: -10px;
     top: -40px;
     bottom: 0px;
@@ -137,9 +138,9 @@
   }
   100% {
     opacity: 1;
-    font-size: 15rem;
-    left: -220px;
-    top: -45px;
+    font-size: 12rem;
+    left: -200px;
+    top: -20px;
     bottom: 0px;
     right: 0px;
     color: $resume-color;
@@ -148,48 +149,48 @@
 
 @-webkit-keyframes letters-x {
   0% {
-    font-size: 15rem;
+    font-size: 12rem;
     bottom: -60px;
     right: -25px;
     opacity: 0;
   }
   100% {
     opacity: 1;
-    font-size: 15rem;
-    bottom: -60px;
-    right: -175px;
+    font-size: 12rem;
+    bottom: -20px;
+    right: -165px;
     color: $music-color;
   }
 }
 
 @-webkit-keyframes letters-c {
   0% {
-    font-size: 15rem;
+    font-size: 12rem;
     bottom: -60px;
     left: 20px;
     opacity: 0;
   }
   100% {
     opacity: 1;
-    font-size: 15rem;
-    bottom: 145px;
-    left: 20px;
+    font-size: 12rem;
+    bottom: 180px;
+    left: 40px;
     color: $home-color;
   }
 }
 
 @-webkit-keyframes letters-k {
   0% {
-    font-size: 15rem;
+    font-size: 12rem;
     top: -45px;
     left: 30px;
     opacity: 0;
   }
   100% {
     opacity: 1;
-    font-size: 15rem;
-    top: 160px;
-    left: 30px;
+    font-size: 12rem;
+    top: 190px;
+    left: 45px;
     color: $covix-color;
   }
 }

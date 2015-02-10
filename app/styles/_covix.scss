@@ -1,0 +1,28 @@
+.covix-member {
+  opacity: 0;
+  -webkit-animation: image-fade 6s 1s forwards;
+}
+
+@-webkit-keyframes image-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.covix-video {
+  opacity: 0;
+  -webkit-animation: video-slide 3s 1s forwards;
+}
+
+@-webkit-keyframes video-slide {
+  0% {
+    opacity: 0;
+    padding-top: 500px;
+  }
+  100% {
+    opacity: 1;
+  }
+}

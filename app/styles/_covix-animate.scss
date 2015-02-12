@@ -1,3 +1,6 @@
+
+
+
 #covix-logo * {
   position: absolute;
   box-sizing: content-box;
@@ -14,6 +17,8 @@
   height: 200px;
   margin: 300px auto;
 }
+
+
 
 .x,.c,.k,.w {
   opacity: 1;
@@ -37,24 +42,19 @@
 }
 
 #covix-logo div.w {
-
   -webkit-animation: letters-w 6s 1s forwards;
-  -webkit-transform: scale(1);
 }
 
 #covix-logo div.x {
   -webkit-animation: letters-x 6s 1s forwards;
-  -webkit-transform: scale(1);
 }
 
 #covix-logo div.c {
   -webkit-animation: letters-c 6s 1s forwards;
-  -webkit-transform: scale(1);
 }
 
 #covix-logo div.k {
   -webkit-animation: letters-k 6s 1s forwards;
-  -webkit-transform: scale(1);
 }
 
 
@@ -133,19 +133,19 @@
 @-webkit-keyframes letters-w {
   0% {
     font-size: 12rem;
-    left: -10px;
-    top: -40px;
-    bottom: 0px;
+    top: 0px;
     right: 0px;
+    bottom: -60px;
+    left: -20px;
     opacity: 0;
   }
   100% {
-    opacity: 1;
     font-size: 12rem;
-    left: -200px;
     top: -20px;
-    bottom: 0px;
     right: 0px;
+    bottom: 0px;
+    left: -200px;
+    opacity: 1;
     color: $resume-color;
   }
 }
@@ -153,15 +153,19 @@
 @-webkit-keyframes letters-x {
   0% {
     font-size: 12rem;
+    top: 0px;
+    right: 0px;
     bottom: -60px;
-    right: -25px;
+    left: -20px;
     opacity: 0;
   }
   100% {
-    opacity: 1;
     font-size: 12rem;
-    bottom: -20px;
-    right: -165px;
+    top: -20px;
+    right: 0px;
+    bottom: 0px;
+    left: 250px;
+    opacity: 1;
     color: $music-color;
   }
 }
@@ -169,15 +173,19 @@
 @-webkit-keyframes letters-c {
   0% {
     font-size: 12rem;
+    top: 0px;
+    right: 0px;
     bottom: -60px;
     left: 20px;
     opacity: 0;
   }
   100% {
-    opacity: 1;
     font-size: 12rem;
-    bottom: 180px;
+    top: -240px;
+    right: 0px;
+    bottom: 0px;
     left: 40px;
+    opacity: 1;
     color: $home-color;
   }
 }
@@ -185,15 +193,25 @@
 @-webkit-keyframes letters-k {
   0% {
     font-size: 12rem;
-    top: -45px;
-    left: 30px;
+    top: 0px;
+    right: 0px;
+    bottom: -60px;
+    left: 20px;
     opacity: 0;
   }
   100% {
-    opacity: 1;
     font-size: 12rem;
-    top: 190px;
-    left: 45px;
+    top: 240px;
+    right: 0px;
+    bottom: 0px;
+    left: 40px;
+    opacity: 1;
     color: $covix-color;
   }
 }
+
+/* #covix-logo {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+} */

@@ -5,7 +5,6 @@ var Router = Ember.Router.extend({
   location: config.locationType
 });
 
-
 Router.map(function() {
   this.route('home');
   this.resource('home', { path: '/' });
@@ -14,8 +13,7 @@ Router.map(function() {
   this.route('resume');
   this.route('contact');
   this.route('code');
+  this.route('nest');
 });
-
-
 
 export default Router;

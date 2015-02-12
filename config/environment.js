@@ -1,34 +1,17 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
-
-
   var ENV = {
-
     modulePrefix: 'personal-website',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
-    soundcloudApiKey: process.env.SOUNDCLOUD_APIKEY,
-    sendgridUser: process.env.SENDGRID_USERNAME,
-    sendgridPw: process.env.SENDGRID_PASSWORD,
-    sendgridEmail: process.env.TO,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       }
     },
-
-  contentSecurityPolicy: {
-    'default-src': "'none'",
-    'script-src': "'self' https://cdn.mxpnl.com", // Allow scripts from https://cdn.mxpnl.com
-    'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
-    'connect-src': "'self' https://api.mixpanel.com http://custom-api.local", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-    'img-src': "'self'",
-    'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
-    'media-src': "'self'"
-  },
 
     APP: {
       // Here you can pass flags/options to your application instance
@@ -38,10 +21,10 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    ENV.APP.LOG_VIEW_LOOKUPS = true;
+    // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {

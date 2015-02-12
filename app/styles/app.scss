@@ -162,6 +162,14 @@ main.contact-page {
   background-repeat: no-repeat;
 }
 
+main.nest-page {
+  font-family: 'Ostrich';
+  @include span(10 of 12);
+  height: 100%;
+  margin-left: span(2 of 12);
+  background: black;
+}
+
 
 
 .covix-member {

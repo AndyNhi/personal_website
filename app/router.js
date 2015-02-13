@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('contact');
   this.route('code');
   this.route('nest');
+  this.route("portfolio");
 });
 
 export default Router;

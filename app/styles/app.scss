@@ -15,6 +15,7 @@ gutters: 0,
 @import 'code';
 @import 'covix-animate';
 @import 'covix';
+@import 'financial-dashboard';
 
 html, body {
   height: 100%;
@@ -40,7 +41,6 @@ aside {
   height: 100%;
   position: fixed;
   color: white;
-
 }
 
 aside nav ul li {
@@ -75,7 +75,6 @@ aside nav li:nth-child(1) a:hover {
   color: $home-color;
 }
 
-
 aside nav li:nth-child(2) {
   transition: .2s ease;
 }
@@ -107,7 +106,6 @@ aside nav li:nth-child(5) {
 aside nav li:nth-child(5) a:hover {
   color: $code-color;
 }
-
 
 aside img.icon-size {
   height: 12%;
@@ -170,100 +168,10 @@ main.nest-page {
   background: black;
 }
 
-
-
-.covix-member {
-  @include span(1.5 of 12);
-  height: 180px;
-
-}
-
-.covix-thumb {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+main.portfolio-page {
+  font-family: 'Ostrich';
+  @include span(10 of 12);
   height: 100%;
-  transition: background-image .5s ease;
-}
-
-
-.wynn {
-  background-image: url('/images/wynnback.jpg');
-}
-
-.wynn:hover {
-  background-image: url('/images/wynnfront.jpg');
-}
-
-.billy {
-  background-image: url('/images/billyback.jpg');
-}
-
-.billy:hover {
-  background-image: url('/images/billyfront.jpg');
-}
-
-.tom {
-  background-image: url('/images/tomback.jpg');
-}
-
-.tom:hover {
-  background-image: url('/images/tomfront.jpg');
-}
-
-.hanzo {
-  background-image: url('/images/hanzoback.jpg');
-}
-
-.hanzo:hover {
-  background-image: url('/images/hanzofront.jpg');
-}
-
-.boogie {
-  background-image: url('/images/boogieback.jpg');
-}
-
-.boogie:hover {
-  background-image: url('/images/boogiefront.jpg');
-}
-
-.ellis {
-  background-image: url('/images/ellisback.jpg');
-}
-
-.ellis:hover {
-  background-image: url('/images/ellisfront.jpg');
-}
-.andy {
-  background-image: url('/images/andyback.jpg');
-}
-
-.andy:hover {
-  background-image: url('/images/andyfront.jpg');
-}
-
-.ben {
-  background-image: url('/images/benback.jpg');
-}
-
-.ben:hover {
-  background-image: url('/images/benfront.jpg');
-}
-
-iframe {
-  max-width: 100%;
-}
-
-.ember-view.profile {
-  height: 0;
-}
-.covix-video {
-  margin-top: 20px;
-  @include span(8.8 of 12);
-  margin-left: span(1.5 of 12);
-}
-
-.covix_font {
-  text-align:justify;
-  text-justify:inter-word;
-  padding: 5px;
+  margin-left: span(2 of 12);
+  background: black;
 }

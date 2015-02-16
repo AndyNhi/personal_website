@@ -1,3 +1,35 @@
+
+
+.covix-layout {
+  font-family: "NexieOne";
+  @include span(12 of 12);
+  div.images {
+    @include span(2 of 12);
+    margin-left: span(2 of 12);
+  }
+  div.footage {
+    @include span(6 of 12);
+    margin-left: span(3 of 12);
+  }
+}
+
+.covix-title {
+  font-family: "NexieOne";
+  color: $covix-color;
+  margin-top: 20px;
+  @include container(80%);
+
+}
+
+.covix-member {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
 .covix-member {
   opacity: 0;
   -webkit-animation: image-fade 6s 1s forwards;
@@ -12,7 +44,7 @@
   }
 }
 
-.covix-video {
+.footage {
   opacity: 0;
   -webkit-animation: video-slide 3s 1s forwards;
 }
@@ -25,15 +57,6 @@
   100% {
     opacity: 1;
   }
-}
-
-
-
-
-.covix-member {
-  @include span(1.5 of 12);
-  height: 180px;
-
 }
 
 .covix-thumb {
@@ -111,11 +134,6 @@
   height: 0;
 }
 
-.covix-video {
-  margin-top: 20px;
-  @include span(8.8 of 12);
-  margin-left: span(1.5 of 12);
-}
 
 .covix_font {
   text-align:justify;

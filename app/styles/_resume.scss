@@ -1,6 +1,11 @@
 .bold {
-  font-weight: bolder
+  font-weight: bolder;
 }
+
+h1.bold {
+    color: $resume-color;
+}
+
 
 .resume-page p {
   padding-left: 20px;
@@ -11,7 +16,8 @@
 }
 
 .resume-page a {
-  color: red;
+  font-family: "Ostrich";
+  color: $resume-color;
 }
 
 section.employment, section.experience-education {
@@ -33,6 +39,7 @@ section.employment {
     margin-left: span(1 of 12);
     color: black;
     margin-top: 20px;
+    margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.38);
     padding: 20px;
     opacity: 1;

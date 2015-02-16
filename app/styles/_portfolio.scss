@@ -9,12 +9,34 @@ $portfolio-color: #39edd4;
 
 .portfolio-page {
   padding-top: 2%;
+
 }
 
 .portfolio-page section {
   @include span(6 of 12);
   margin-left: span(2 of 12);
   margin-bottom: 50px;
+  opacity: 0;
+  -webkit-animation: projectfade 2s .2s forwards;
+  animation: projectfade 2s .2s forwards;
+}
+
+@-webkit-keyframes projectfade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes projectfade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 section.financial-dashboard a {

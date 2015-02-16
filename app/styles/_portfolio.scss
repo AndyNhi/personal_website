@@ -1,0 +1,36 @@
+$portfolio-color: #39edd4;
+
+@mixin label {
+  color: $portfolio-color;
+  &:hover{
+    color: white;
+  }
+}
+
+.portfolio-page {
+  padding-top: 2%;
+}
+
+.portfolio-page section {
+  @include span(6 of 12);
+  margin-left: span(2 of 12);
+  margin-bottom: 50px;
+}
+
+section.financial-dashboard a {
+  @include label;
+}
+
+section.gcamp a {
+  @include label;
+}
+
+div .project-container img {
+    max-width: 100%;
+    border: 5px solid $portfolio-color;
+}
+
+div.project-summary {
+  border-left: 2px solid white;
+  padding-left: 10px;
+}

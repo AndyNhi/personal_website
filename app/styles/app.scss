@@ -15,7 +15,8 @@ gutters: 0,
 @import 'code';
 @import 'covix-animate';
 @import 'covix';
-@import 'financial-dashboard';
+@import 'portfolio';
+
 
 html, body {
   height: 100%;
@@ -171,7 +172,6 @@ main.nest-page {
 main.portfolio-page {
   font-family: 'Ostrich';
   @include span(10 of 12);
-  height: 100%;
   margin-left: span(2 of 12);
   background: black;
 }

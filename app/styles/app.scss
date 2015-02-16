@@ -68,44 +68,47 @@ a {
   color: white;
   text-decoration: none;
 }
-aside nav li:nth-child(1) {
-  transition: .2s ease;
-}
 
-aside nav li:nth-child(1) a:hover {
-  color: $home-color;
+aside nav li:nth-child(1) {
+transition: .2s ease;
+  a:hover {
+    color: $home-color;
+  }
 }
 
 aside nav li:nth-child(2) {
-  transition: .2s ease;
+transition: .2s ease;
+  a:hover {
+    color: $music-color;
+  }
 }
 
-aside nav li:nth-child(2) a:hover {
-  color: $music-color;
-}
 
 aside nav li:nth-child(3) {
-  transition: .2s ease;
-}
-
-aside nav li:nth-child(3) a:hover {
-  color: $covix-color;
+transition: .2s ease;
+  a:hover {
+    color: $covix-color;
+  }
 }
 
 aside nav li:nth-child(4) {
-  transition: .2s ease;
-}
-
-aside nav li:nth-child(4) a:hover {
-  color: $resume-color;
+transition: .2s ease;
+  a:hover {
+    color: $resume-color;
+  }
 }
 
 aside nav li:nth-child(5) {
   transition: .2s ease;
+  a:hover {
+    color: $code-color;
+  }
 }
-
-aside nav li:nth-child(5) a:hover {
-  color: $code-color;
+aside nav li:nth-child(6) {
+  transition: .2s ease;
+  a:hover {
+    color: $portfolio-color;
+  }
 }
 
 aside img.icon-size {

@@ -41,5 +41,46 @@ export default Ember.Component.extend({
     Ember.$('#modal-ellis').on('click', function() {
       Ember.$(this).removeClass('md-show');
     });
+
+    Ember.$('[data-profile="modal-hanzo"]').on('click', function(event) {
+      event.preventDefault();
+      Ember.$('#modal-hanzo').addClass('md-show');
+    });
+
+    Ember.$('#modal-hanzo').on('click', function() {
+      Ember.$(this).removeClass('md-show');
+    });
+
+    Ember.$('[data-profile="modal-tom"]').on('click', function(event) {
+      event.preventDefault();
+      Ember.$('#modal-tom').addClass('md-show');
+    });
+
+    Ember.$('#modal-tom').on('click', function() {
+      Ember.$(this).removeClass('md-show');
+    });
+
+    Ember.$('[data-profile="modal-ben"]').on('click', function(event) {
+      event.preventDefault();
+      Ember.$('#modal-ben').addClass('md-show');
+    });
+
+    Ember.$('#modal-ben').on('click', function() {
+      Ember.$(this).removeClass('md-show');
+    });
+
+    Ember.$('[data-profile="modal-boogie"]').on('click', function(event) {
+      event.preventDefault();
+      Ember.$('#modal-boogie').addClass('md-show');
+    });
+
+    Ember.$('#modal-boogie').on('click', function() {
+      Ember.$(this).removeClass('md-show');
+    });
+
+
+
+
+
   }
 });

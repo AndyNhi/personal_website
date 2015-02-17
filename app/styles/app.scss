@@ -120,7 +120,7 @@ main.home-page {
   @include span(10 of 12);
   margin-left: span(2 of 12);
   height: 100%;
-  background-image: url(/images/homebg.png);
+  background-image: url(/images/homebg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -129,7 +129,7 @@ main.music-page {
   @include span(10 of 12);
   margin-left: span(2 of 12);
   height: 100%;
-  background-image: url(/images/lion.png);
+  background-image: url(/images/lion.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -138,7 +138,7 @@ main.covix-page {
   @include span(10 of 12);
   margin-left: span(2 of 12);
   height: 100%;
-  background-image: url(/images/lizard.png);
+  background-image: url(/images/lizard.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow:  scroll;
@@ -148,7 +148,7 @@ main.resume-page {
   @include span(10 of 12);
   margin-left: span(2 of 12);
   height: 100%;
-  background-image: url(/images/turtle.png);
+  background-image: url(/images/turtle.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow:  scroll;
@@ -159,7 +159,7 @@ main.code-page {
   margin-left: span(2 of 12);
   height: 100%;
   overflow:  scroll;
-  background-image: url(/images/duck.png);
+  background-image: url(/images/duck.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -168,9 +168,7 @@ main.contact-page {
   @include span(10 of 12);
   margin-left: span(2 of 12);
   height: 100%;
-  background-image: url(/images/duck.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: black;
 }
 
 main.nest-page {

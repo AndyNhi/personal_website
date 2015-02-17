@@ -1,17 +1,24 @@
-
-
-.covix-layout {
+.covix-page {
   font-family: "NexieOne";
-  @include span(12 of 12);
-  div.images {
+  .images {
     @include span(2 of 12);
-    margin-left: span(2 of 12);
+    margin-left: span(1 of 12);
+    position: fixed;
+    opacity: 0;
+    -webkit-animation: image-fade 6s 1s forwards;
   }
-  div.footage {
+  .footage {
     @include span(6 of 12);
-    margin-left: span(3 of 12);
+    margin-left: span(2.5 of 12);
+    @media (max-width: 800px) {
+      display: none;
+    }
+    opacity: 0;
+    -webkit-animation: video-slide 3s 1s forwards;
   }
 }
+
+
 
 .covix-title {
   font-family: "NexieOne";
@@ -26,11 +33,6 @@
   height: 100px;
 }
 
-.covix-member {
-  opacity: 0;
-  -webkit-animation: image-fade 6s 1s forwards;
-}
-
 @-webkit-keyframes image-fade {
   0% {
     opacity: 0;
@@ -38,11 +40,6 @@
   100% {
     opacity: 1;
   }
-}
-
-.footage {
-  opacity: 0;
-  -webkit-animation: video-slide 3s 1s forwards;
 }
 
 @-webkit-keyframes video-slide {
@@ -61,7 +58,6 @@
   height: 100%;
   transition: background-image .5s ease;
 }
-
 
 .wynn {
   background-image: url('/images/wynnback.jpg');

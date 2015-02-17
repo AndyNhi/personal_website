@@ -1,23 +1,22 @@
 .covix-page {
   font-family: "NexieOne";
   .images {
-    @include span(2 of 12);
+    @include span(10 of 12);
     margin-left: span(1 of 12);
-    position: fixed;
     opacity: 0;
     -webkit-animation: image-fade 6s 1s forwards;
-  }
-  .footage {
-    @include span(6 of 12);
-    margin-left: span(2.5 of 12);
-    @media (max-width: 800px) {
-      display: none;
+    .footage {
+      @include span(6 of 12);
+      margin-left: span(2 of 12);
+      @media (max-width: 800px) {
+        display: none;
+      }
+      opacity: 0;
+      -webkit-animation: video-slide 3s 1s forwards;
     }
-    opacity: 0;
-    -webkit-animation: video-slide 3s 1s forwards;
   }
-}
 
+}
 
 
 .covix-title {

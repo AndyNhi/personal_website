@@ -45,6 +45,11 @@ section.gcamp a {
   @include label;
 }
 
+section.blog a {
+  @include label;
+}
+
+
 div.project-container img {
     max-width: 100%;
     border: 5px solid $portfolio-color;

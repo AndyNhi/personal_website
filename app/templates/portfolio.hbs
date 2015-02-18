@@ -1,32 +1,74 @@
 <main class="portfolio-page">
 
+
+  <section class="new-projects">
+    <h1>New Projects</h1>
+    <div class="project-summary">
+      <h4>Status: <span class="status-new">Early Stages</span></h4>
+      <h1>NEST + Retrive data from my Nest thermostat</h2>
+      <div class="current-project">
+        <h4>Discoveries & Challenges </h5>
+        <h4> 02/11/2005 </h4>
+          <p>1. the sample on the nest website uses a deprecated method from firebase (.auth). the new function is (authWithCustomToken)</p>
+          <p>2. the successful request requires three arguments (code + clientid + secret token)</p>
+          <p>3. updating ember cli to 0.1.12 in order to install oauth 2. update overwrites most of my added dependecies i.e sass, susy, dotenv. </p>
+        <h4>Next Steps</h4>
+          <p>1. next stages require me to incorporate oauth 2 in ember cli in order to retrieve the temporary code needed for a token-key</p>
+          <p>2. setup a repository on firebase, which handles auth request parameters</p>
+      </div>
+
+      <h1>ANDROID + Build a simple android APP</h1>
+      <div class="current-project">
+        <h4>Next Steps</h4>
+        <p>1. Using team treehouse as a basis for exposure to android development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="personal-website">
+    <h1><a target="_blank" href="https://personal-atn.herokuapp.com/">Personal Website</a></h1>
+
+    <div class="project-summary">
+      <h2>What does it do?</h1>
+      <h4>Provide you with the coolest information about me :).</h4>
+      <h4>Link me to <a target="_blank" href="https://personal-atn.herokuapp.com/">Heroku</a> | <a  target="_blank" href="https://github.com/AndyNhi/personal_website">Github</a></h4>
+      <h4>Status: <span class="status-inprocess">In-Process</span></h4>
+      <h4>Build: Ember CLI, Sass, Susy, Html5</h4>
+    </div>
+
+    <div class="project-container">
+      <img src="/project/personal.png"/>
+    </div>
+  </section>
+
   <section class="financial-dashboard">
     <h1><a target="_blank" href="https://financial-dashboard.herokuapp.com/">financial dashboard</a></h1>
-
-
-      <div class="project-summary">
-        <h2>What does it do?</h1>
-          <h4>This project collects trending $Cash Tags from the financial market using both the twitter
-            and stocktwit api. In addition, it pulls financial information from yahoo api for performance based measurments.
-          </h4>
+    <div class="project-summary">
+      <h2>What does it do?</h1>
+        <h4>This project collects trending $Cash Tags from the financial market using both the twitter
+          and stocktwit api. In addition, it pulls financial information from yahoo api for performance based measurments.
+        </h4>
         <h4>Link me to <a target="_blank" href="https://financial-dashboard.herokuapp.com/">Heroku</a> | <a  target="_blank" href="https://github.com/AndyNhi/financial_dashboard">Github</a></h4>
+        <h4>Status: <span class="status-complete">Complete</span></h4>
+        <h4>Build: Ruby on Rails, HTML5, Bootstrap, CSS, SCSS, Stock Twit API, Twitter Api, Yahoo Api</h4>
       </div>
+    <div class="project-container">
+      <img src="/project/fd-image.png"/>
+    </div>
+  </section>
 
-      <div class="project-container">
-        <img src="/project/fd-image.png"/>
-      </div>
-    </section>
+  <section class="blog">
+    <h1><a target="_blank" href="https://ember-blog-client.herokuapp.com/">Blog</a></h1>
 
-    <section class="blog">
-      <h1><a target="_blank" href="https://ember-blog-client.herokuapp.com/">Blog</a></h1>
-
-      <div class="project-summary">
-        <h2>What does it do?</h1>
-          <h4>
-            It generates blog post on client side while maintaining the data using rails as a backend. The model
-            association is built both on the client-side and server-side.
-          </h4>
-          <h4>Link me to <a target="_blank" href="https://ember-blog-client.herokuapp.com/">Heroku</a> | <a  target="_blank" href="https://github.com/AndyNhi/blog_client">Github Client</a> | <a  target="_blank" href="https://github.com/AndyNhi/blog">Github Server</a></h4>
+    <div class="project-summary">
+      <h2>What does it do?</h1>
+        <h4>
+          It generates blog post on client side while maintaining the data using rails as a backend. The model
+          association is built both on the client-side and server-side.
+        </h4>
+        <h4>Link me to <a target="_blank" href="https://ember-blog-client.herokuapp.com/">Heroku</a> | <a  target="_blank" href="https://github.com/AndyNhi/blog_client">Github Client</a> | <a  target="_blank" href="https://github.com/AndyNhi/blog">Github Server</a></h4>
+        <h4>Status: <span class="status-complete">Complete</span></h4>
+        <h4>Build: Ember CLI, Ruby on Rails, HTML5, CSS, SASS, Susy</h4>
       </div>
 
       <div class="project-container">
@@ -44,20 +86,21 @@
             The example we use has a user with project and tasks. The authorization is controlled by the users role i.e (admin or owner).
           </h4>
           <h4>Link me to <a target="_blank" href="https://mighty-gorge-8689.herokuapp.com/">Heroku</a> | <a  target="_blank" href="https://github.com/AndyNhi/gCamp">Github</a></h4>
-      </div>
+          <h4>Status: <span class="status-complete">Complete</span></h4>
+          <h4>Build: Ruby on Rails, Javascript, Jquery, Rspec, Capybara, HTML5, CSS, SCSS </h4>
+        </div>
 
-      <div class="project-container">
-        <img src="/project/gcamp1.png"/>
-      </div>
-      <div class="project-container">
-        <img src="/project/gcamp2.png"/>
-      </div>
-      <div class="project-container">
-        <img src="/project/gcamp3.png"/>
-      </div>
+        <div class="project-container">
+          <img src="/project/gcamp1.png"/>
+        </div>
+        <div class="project-container">
+          <img src="/project/gcamp2.png"/>
+        </div>
+        <div class="project-container">
+          <img src="/project/gcamp3.png"/>
+        </div>
     </section>
 
+</main>
 
-  </main>
-
-  {{outlet}}
+{{outlet}}

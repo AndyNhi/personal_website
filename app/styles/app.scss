@@ -116,6 +116,10 @@ aside img.icon-size {
   width: 12%;
 }
 
+main {
+  overflow-y: scroll;
+}
+
 main.home-page {
   @include span(10 of 12);
   margin-left: span(2 of 12);

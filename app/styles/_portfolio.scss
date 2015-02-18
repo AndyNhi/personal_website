@@ -7,7 +7,6 @@
 
 .portfolio-page {
   padding-top: 2%;
-
 }
 
 .portfolio-page section {
@@ -49,6 +48,10 @@ section.blog a {
   @include label;
 }
 
+section.personal-website a {
+  @include label;
+}
+
 
 div.project-container img {
     max-width: 100%;
@@ -58,4 +61,19 @@ div.project-container img {
 div.project-summary {
   border-left: 2px solid white;
   padding-left: 10px;
+}
+
+
+.status-complete {
+  color: green + 100;
+}
+
+.status-inprocess {
+  color: yellow + 100;
+}
+
+.current-project {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 2px solid gray;
 }

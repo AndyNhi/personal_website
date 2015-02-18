@@ -137,6 +137,7 @@ main.music-page {
   background-image: url(/images/lion.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: overlay;
 }
 
 main.covix-page {
@@ -146,7 +147,6 @@ main.covix-page {
   background-image: url(/images/lizard.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  overflow:  scroll;
 }
 
 main.resume-page {

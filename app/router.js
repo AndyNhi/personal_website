@@ -11,9 +11,7 @@ Router.map(function() {
   this.route('music');
   this.route('covix');
   this.route('resume');
-  this.route('contact');
   this.route('code');
-  this.route('nest');
   this.route("portfolio");
 });
 

@@ -11,7 +11,6 @@ gutters: 0,
 @import 'resume';
 @import 'music';
 @import 'home';
-@import 'contact';
 @import 'code';
 @import 'covix-animate';
 @import 'covix';
@@ -27,6 +26,7 @@ body {
   @include span(12 of 12);
   color: white;
 }
+
 
 .ember-view {
   height: 100%;
@@ -72,14 +72,14 @@ a {
 aside nav li:nth-child(1) {
 transition: .2s ease;
   a:hover {
-    color: $home-color;
+    color: $purple-color;
   }
 }
 
 aside nav li:nth-child(2) {
 transition: .2s ease;
   a:hover {
-    color: $music-color;
+    color: $blue-color;
   }
 }
 
@@ -87,27 +87,27 @@ transition: .2s ease;
 aside nav li:nth-child(3) {
 transition: .2s ease;
   a:hover {
-    color: $covix-color;
+    color: $portfolio-color;
   }
 }
 
 aside nav li:nth-child(4) {
 transition: .2s ease;
   a:hover {
-    color: $resume-color;
+    color: $red-color;
   }
 }
 
 aside nav li:nth-child(5) {
   transition: .2s ease;
   a:hover {
-    color: $code-color;
+    color: $orange-color;
   }
 }
 aside nav li:nth-child(6) {
   transition: .2s ease;
   a:hover {
-    color: $portfolio-color;
+    color: $yellow-color;
   }
 }
 
@@ -166,13 +166,6 @@ main.code-page {
   background-image: url(/images/duck.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-main.contact-page {
-  @include span(10 of 12);
-  margin-left: span(2 of 12);
-  height: 100%;
-  background: black;
 }
 
 main.nest-page {

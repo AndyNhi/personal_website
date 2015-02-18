@@ -116,7 +116,8 @@ aside img.icon-size {
   width: 12%;
 }
 
-main {
+
+.home-page, .covix-page, .resume-page, .code-page, .portfolio-page {
   overflow-y: scroll;
 }
 
@@ -166,14 +167,6 @@ main.code-page {
   background-image: url(/images/duck.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-main.nest-page {
-  font-family: 'Ostrich';
-  @include span(10 of 12);
-  height: 100%;
-  margin-left: span(2 of 12);
-  background: black;
 }
 
 main.portfolio-page {

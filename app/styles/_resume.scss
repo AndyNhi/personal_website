@@ -70,3 +70,17 @@ section.experience-education {
     opacity: 1;
   }
 }
+
+
+.download-resume > a{
+  float: right;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 2em;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.59);
+  color: red;
+  &:hover {
+    background: black;
+  }
+}

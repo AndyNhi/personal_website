@@ -1,86 +1,20 @@
-.resume-page {
-  font-family: "NexieOne";
-}
-
-.bold {
-  font-weight: bolder;
-}
-
-h1.bold {
-    color: $yellow-color;
-}
-
-.resume-page p {
-  padding-left: 20px;
-}
-
-.resume-page ul li {
-  padding-left: 20px;
-}
-
-.resume-page a {
-  font-family: "NexieOne";
-  color: $yellow-color;
-}
-
-section.employment, section.experience-education {
-  opacity: 0;
-}
-
-section.employment {
-  -webkit-animation: blocker 4s .1s forwards;
-}
-
-@-webkit-keyframes blocker {
-  0% {
-    @include span(5 of 12);
-    margin-left: span(1 of 12);
-    opacity: 0;
-  }
-  100% {
-    @include span(5 of 12);
-    margin-left: span(1 of 12);
-    color: black;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.38);
-    padding: 20px;
-    opacity: 1;
-  }
-}
-
 section.experience-education {
   -webkit-animation: block 4s .1s forwards;
 }
 
-
 @-webkit-keyframes block {
   0% {
-    @include span(5 of 12);
+    @include span(7 of 12);
     margin-left: span(1 of 12);
     opacity: 0;
   }
   100% {
-    @include span(5 of 12);
+    @include span(7 of 12);
     margin-left: span(1 of 12);
     color: black;
     margin-top: 20px;
     background: rgba(255, 255, 255, 0.38);
     padding: 20px;
     opacity: 1;
-  }
-}
-
-
-.download-resume > a{
-  float: right;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 2em;
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.59);
-  color: red;
-  &:hover {
-    background: black;
   }
 }

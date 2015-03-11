@@ -52,6 +52,10 @@ section.personal-website a {
   @include label;
 }
 
+section.word-analyzer a {
+  @include label;
+}
+
 
 div.project-container img {
     max-width: 100%;

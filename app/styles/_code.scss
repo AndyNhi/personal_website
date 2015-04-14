@@ -9,11 +9,17 @@
     @include span(4.5 of 12);
     margin-left: span(1 of 12);
     -webkit-animation: box 4s .1s forwards;
+    -moz-animation: box 4s .1s forwards;
+    -o-animation: box 4s .1s forwards;
+    animation: box 4s .1s forwards;
     opacity: 0
   }
   .resources {
     padding: 10px;
     -webkit-animation: box 4s .1s forwards;
+    -moz-animation: box 4s .1s forwards;
+    -o-animation: box 4s .1s forwards;
+    animation: box 4s .1s forwards;
     @include span(4.5 of 12);
     margin-left: span(1 of 12);
     opacity: 0
@@ -37,6 +43,62 @@
 
   }
 }
+
+
+@-moz-keyframes box {
+  0% {
+      margin-top: -1000px;
+      height: 800px;
+      background: rgba(0, 0, 0, 0.50);
+      border-radius: 6px;
+      opacity: 0;
+  }
+  100% {
+      margin-top: 50px;
+      height: 800px;
+      background: rgba(0, 0, 0, 0.50);
+      border-radius: 6px;
+      opacity: 1;
+
+  }
+}
+
+@-o-keyframes box {
+  0% {
+      margin-top: -1000px;
+      height: 800px;
+      background: rgba(0, 0, 0, 0.50);
+      border-radius: 6px;
+      opacity: 0;
+  }
+  100% {
+      margin-top: 50px;
+      height: 800px;
+      background: rgba(0, 0, 0, 0.50);
+      border-radius: 6px;
+      opacity: 1;
+
+  }
+}
+
+@keyframes box {
+  0% {
+      margin-top: -1000px;
+      height: 800px;
+      background: rgba(0, 0, 0, 0.50);
+      border-radius: 6px;
+      opacity: 0;
+  }
+  100% {
+      margin-top: 50px;
+      height: 800px;
+      background: rgba(0, 0, 0, 0.50);
+      border-radius: 6px;
+      opacity: 1;
+
+  }
+}
+
 
 .code-page h2 {
   color: $blue-color;

@@ -4,6 +4,8 @@
   height: 100%;
   opacity: 0;
   -webkit-animation: media-player 2s .1s forwards;
+  -moz-animation: media-player 2s .1s forwards;
+  -o-animation: media-player 2s .1s forwards;
   animation: media-player 2s .1s forwards;
 }
 
@@ -15,6 +17,33 @@
 }
 
 @-webkit-keyframes media-player {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@-moz-keyframes media-player {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@-o-keyframes media-player {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes media-player {
   0% {
     opacity: 0
   }

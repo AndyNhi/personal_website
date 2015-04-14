@@ -5,6 +5,9 @@
     margin-left: span(1 of 12);
     opacity: 0;
     -webkit-animation: image-fade 6s 1s forwards;
+    -moz-animation: image-fade 6s 1s forwards;
+    -o-animation: image-fade 6s 1s forwards;
+    animation: image-fade 6s 1s forwards;
     .footage {
       @include span(6 of 12);
       margin-left: span(2 of 12);
@@ -13,6 +16,9 @@
       }
       opacity: 0;
       -webkit-animation: video-slide 3s 1s forwards;
+      -moz-animation: video-slide 3s 1s forwards;
+      -o-animation: video-slide 3s 1s forwards;
+      animation: video-slide 3s 1s forwards;
     }
   }
 
@@ -42,6 +48,63 @@
 }
 
 @-webkit-keyframes video-slide {
+  0% {
+    opacity: 0;
+    padding-top: 500px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes  image-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes  video-slide {
+  0% {
+    opacity: 0;
+    padding-top: 500px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes  image-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes  video-slide {
+  0% {
+    opacity: 0;
+    padding-top: 500px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes  image-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes  video-slide {
   0% {
     opacity: 0;
     padding-top: 500px;

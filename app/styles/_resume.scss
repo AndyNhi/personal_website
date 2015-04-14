@@ -1,8 +1,62 @@
 section.experience-education {
   -webkit-animation: block 4s .1s forwards;
+  -moz-animation: block 4s .1s forwards;
+  -o-animation: block 4s .1s forwards;
+  animation: block 4s .1s forwards;
 }
 
 @-webkit-keyframes block {
+  0% {
+    @include span(7 of 12);
+    margin-left: span(1 of 12);
+    opacity: 0;
+  }
+  100% {
+    @include span(7 of 12);
+    margin-left: span(1 of 12);
+    color: black;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.38);
+    padding: 20px;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes block {
+  0% {
+    @include span(7 of 12);
+    margin-left: span(1 of 12);
+    opacity: 0;
+  }
+  100% {
+    @include span(7 of 12);
+    margin-left: span(1 of 12);
+    color: black;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.38);
+    padding: 20px;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes block {
+  0% {
+    @include span(7 of 12);
+    margin-left: span(1 of 12);
+    opacity: 0;
+  }
+  100% {
+    @include span(7 of 12);
+    margin-left: span(1 of 12);
+    color: black;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.38);
+    padding: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes block {
   0% {
     @include span(7 of 12);
     margin-left: span(1 of 12);
